@@ -71,6 +71,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 - React
 - Nextjs
+- Next-auth
 - Mongoose
 - razorpay
 
@@ -78,12 +79,12 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Features
 
-- User Authentication:- Secure login and registration using NextAuth through Github.
-- Profile Management:- Users can update their username ,profile pictures and cover photos.
-- Payment Processing:- Integrated with Razorpay for handling payments.
-- Dynamic Payment Options:- Fans can choose predefined payment amounts or enter custom amounts.
-- Contribution Tracking:- Displays the top 10 contributions on the creator's profile.
-- Responsive Design:- Optimized for both desktop and mobile devices.
+- User Authentication:-  Secure login and registration using NextAuth through Github.
+- Profile Management:-  Users can update their username ,profile pictures and cover photos.
+- Payment Processing:-  Integrated with Razorpay for handling payments.
+- Dynamic Payment Options:-  Fans can choose predefined payment amounts or enter custom amounts.
+- Contribution Tracking:-  Displays the top 10 contributions on the creator's profile.
+- Responsive Design:-  Optimized for both desktop and mobile devices.
 
 ## Learn More
 
@@ -94,8 +95,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+<!-- ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
