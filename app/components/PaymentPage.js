@@ -54,7 +54,7 @@ const PaymentPage = ({ username }) => {
         setPaymentform({ ...paymentform, name: "", message: "", amount: "" })
     }
     const pay = async (amount) => {
-        if (session) {
+        // if (session) {
             if (paymentform.name && paymentform.message) {
                 let amount2 = Number.parseInt(amount)
                 let a = await initiate(amount2, username, paymentform)
@@ -149,21 +149,21 @@ const PaymentPage = ({ username }) => {
                 });
             }
         }
-        else {
-            // alert("SignIn/Login")
-            toast.info('Name and Message required!', {
-                position: "bottom-right",
-                autoClose: 3000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                transition: Bounce,
-            });
-            router.push("/login")
-        }
+        // else {
+        //     // alert("SignIn/Login")
+        //     toast.info('Name and Message required!', {
+        //         position: "bottom-right",
+        //         autoClose: 3000,
+        //         hideProgressBar: true,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined,
+        //         theme: "colored",
+        //         transition: Bounce,
+        //     });
+        //     router.push("/login")
+        // }
 
     }
 

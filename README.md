@@ -29,7 +29,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/krishna3032004/GetMeACoffee-app-using-next.js.git
 
 2. Install dependencies
 
@@ -43,6 +43,10 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
     npm run dev
 
 2. Open your browser and visit http://localhost:3000
+
+3. You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+4. This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Features
 
