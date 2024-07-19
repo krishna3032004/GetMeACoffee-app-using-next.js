@@ -42,6 +42,17 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
    npm install react-toastify
 
+## Configuration
+
+   To configure the project, create a .env.local file in the root of your project and add the following variables:
+
+   ```sh
+   Github_ID=your_OAuth_github_Id
+   Github_SECRET=your_OAuth_github_Secret
+   NEXT_PUBLIC_URL=http://localhost:3000/
+   if you open in mobile use this url2 in paymentpage.js file and in razorpay folder.
+   NEXT_PUBLIC_URL2=http://192.168.29.183:3000/  
+
 ## Usage
 
 1. Start the development server

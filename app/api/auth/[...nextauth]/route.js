@@ -13,7 +13,6 @@ const handler = NextAuth({
       clientSecret: process.env.Github_SECRET
     }),
   ],
-  database: process.env.DATABASE_URL,
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
 

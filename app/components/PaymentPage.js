@@ -55,99 +55,99 @@ const PaymentPage = ({ username }) => {
     }
     const pay = async (amount) => {
         // if (session) {
-            if (paymentform.name && paymentform.message) {
-                let amount2 = Number.parseInt(amount)
-                let a = await initiate(amount2, username, paymentform)
-                // alert(user.razorpayId)
-                // alert(user.razorpaySecret)
-                // ": use this if you use razorpay :" \\
-                let orderID = a.id
-                var options = {
-                    "key_id": user.razorpayId, // Enter the Key ID generated from the Dashboard
-                    "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-                    "currency": "INR",
-                    "name": "Get Me A Coffee", //your business name
-                    "description": "Test Transaction",
-                    "image": "https://example.com/your_logo",
-                    "order_id": orderID, //This is a sample Order ID. Pass the id obtained in the response of Step 1
-                    "callback_url": `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
-                    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
-                        "name": "Gaurav Kumar", //your customer's name
-                        "email": "gaurav.kumar@example.com",
-                        "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
-                    },
-                    "notes": {
-                        "address": "Razorpay Corporate Office"
-                    },
-                    "theme": {
-                        "color": "#3399cc"
-                    }
-                };
-                // window.Razorpay
-                var rzp1 = new window.Razorpay(options);
+        if (paymentform.name && paymentform.message) {
+            let amount2 = Number.parseInt(amount)
+            let a = await initiate(amount2, username, paymentform)
+            // alert(user.razorpayId)
+            // alert(user.razorpaySecret)
+            // ": use this if you use razorpay :" \\
+            let orderID = a.id
+            var options = {
+                "key_id": user.razorpayId, // Enter the Key ID generated from the Dashboard
+                "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                "currency": "INR",
+                "name": "Get Me A Coffee", //your business name
+                "description": "Test Transaction",
+                "image": "https://example.com/your_logo",
+                "order_id": orderID, //This is a sample Order ID. Pass the id obtained in the response of Step 1
+                "callback_url": `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
+                "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+                    "name": "Gaurav Kumar", //your customer's name
+                    "email": "gaurav.kumar@example.com",
+                    "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
+                },
+                "notes": {
+                    "address": "Razorpay Corporate Office"
+                },
+                "theme": {
+                    "color": "#3399cc"
+                }
+            };
+            // window.Razorpay
+            var rzp1 = new window.Razorpay(options);
 
-                rzp1.open();
+            rzp1.open();
 
 
-                         // this is when you not use razorpay
+            // this is when you not use razorpay
 
-                // toast.success('Payment done Successfully!', {
-                //     position: "bottom-right",
-                //     autoClose: 3000,
-                //     hideProgressBar: true,
-                //     closeOnClick: true,
-                //     pauseOnHover: true,
-                //     draggable: true,
-                //     progress: undefined,
-                //     theme: "colored",
-                //     transition: Bounce,
-                // });
-                // getdata()
-                // handleblank()
-                
-            }
-            else if (paymentform.name) {
-                toast.warning('Message required!', {
-                    position: "bottom-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "colored",
-                    transition: Bounce,
-                });
-                // alert("Message required ")
-            }
-            else if (paymentform.message) {
-                toast.warning('Name required!', {
-                    position: "bottom-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "colored",
-                    transition: Bounce,
-                });
-                // alert("Name required")
-            }
-            else {
-                // alert("Name and Message required")
-                toast.warning('Name and Message required!', {
-                    position: "bottom-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "colored",
-                    transition: Bounce,
-                });
-            }
+            // toast.success('Payment done Successfully!', {
+            //     position: "bottom-right",
+            //     autoClose: 3000,
+            //     hideProgressBar: true,
+            //     closeOnClick: true,
+            //     pauseOnHover: true,
+            //     draggable: true,
+            //     progress: undefined,
+            //     theme: "colored",
+            //     transition: Bounce,
+            // });
+            // getdata()
+            // handleblank()
+
+        }
+        else if (paymentform.name) {
+            toast.warning('Message required!', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                transition: Bounce,
+            });
+            // alert("Message required ")
+        }
+        else if (paymentform.message) {
+            toast.warning('Name required!', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                transition: Bounce,
+            });
+            // alert("Name required")
+        }
+        else {
+            // alert("Name and Message required")
+            toast.warning('Name and Message required!', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                transition: Bounce,
+            });
+
         }
         // else {
         //     // alert("SignIn/Login")
