@@ -1,3 +1,7 @@
+### GetMeACoffee
+
+A full-stack web application built with Next.js that replicates the core functionalities of Patreon. This platform allows content creators to receive payments and support from their fans. Fans can make payments, leave messages, and view the top contributions.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -19,6 +23,35 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/your-username/project-name.git
+
+2. Install dependencies
+
+   ```sh
+   npm install
+
+## Usage
+
+1. Start the development server
+    ```sh
+    npm run dev
+
+2. Open your browser and visit http://localhost:3000
+
+## Features
+
+- User Authentication: Secure login and registration using NextAuth through Github.
+- Profile Management: Users can update their username ,profile pictures and cover photos.
+- Payment Processing: Integrated with Razorpay for handling payments.
+- Dynamic Payment Options: Fans can choose predefined payment amounts or enter custom amounts.
+- Contribution Tracking: Displays the top 10 contributions on the creator's profile.
+- Responsive Design: Optimized for both desktop and mobile devices.
 
 ## Learn More
 
