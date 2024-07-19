@@ -34,7 +34,16 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 2. Install dependencies
 
    ```sh
-   npm install
+   npm install mongoose
+
+   ```sh
+   npm install next-auth
+
+   ```sh
+   npm install razorpay
+
+   ```sh
+   npm install react-toastify
 
 ## Usage
 
