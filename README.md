@@ -1,4 +1,4 @@
-### GetMeACoffee
+# GetMeACoffee
 
 A full-stack web application built with Next.js that replicates the core functionalities of Patreon. This platform allows content creators to receive payments and support from their fans. Fans can make payments, leave messages, and view the top contributions.
 
